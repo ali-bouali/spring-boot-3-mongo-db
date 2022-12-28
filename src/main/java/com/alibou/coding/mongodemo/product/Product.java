@@ -1,6 +1,7 @@
 package com.alibou.coding.mongodemo.product;
 
 import com.alibou.coding.mongodemo.category.Category;
+import java.math.BigDecimal;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,6 +20,9 @@ public class Product {
   private String id;
   private String name;
   private String description;
+  private BigDecimal price;
+  private double quantity;
+  private double rating;
 
   private List<String> tags;
 
